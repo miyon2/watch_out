@@ -1,0 +1,13 @@
+<div class="container show">
+  <div class="content">
+    <p>
+      <%= @nottodo.name %>님은 오늘 <span class="champ_name" id="notto"><%= @nottodo.champion %></span> 조심하세요!
+    </p>
+  </div>
+
+  <div class="row link">
+    <%= link_to '> 다시하기', new_nottodo_path, class: "col" %>
+    <%= link_to '> 버스기사 알아보기', new_todo_path, class: "col" %>
+    <%= link_to '> 돌아가기', root_path, class: "col" %>
+  </div>
+</div>

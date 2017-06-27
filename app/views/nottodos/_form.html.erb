@@ -1,0 +1,18 @@
+<%= form_for(@nottodo) do |f| %>
+  <% if @nottodo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nottodo.errors.count, "error") %> prohibited this nottodo from being saved:</h2>
+
+      <ul>
+      <% @nottodo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :name %>
+    <%= f.submit "GO!" %>
+  </div>
+<% end %>

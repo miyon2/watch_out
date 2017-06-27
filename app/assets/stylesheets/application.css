@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* 전체 레이아웃 스타일 설정 */
+ @font-face {
+   font-family:'koverwatch';
+   src: url('/assets/koverwatch.ttf') format("truetype");
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ body {
+   background-color: #0B0D12!important;
+   color: white!important;
+ }
+
+ nav{
+   background-color: #0B0D12!important;
+   opacity: 0.93;
+ }
+
+ .container {
+   font-family: 'koverwatch';
+ }
+
+ #site-title{
+   font-size: 30px;
+   color: #009AE4!important;
+ }
+
+ #option-title{
+   font-size: 20px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   color: #009AE4!important;
+ }
+
+ .nav-item {
+   font-family: 'koverwatch';
+   font-size: 20px;
+ }
+
+ .yield {
+   padding-top: 30px;
+ }
+
+ /* root 페이지 스타일설정 */
+.start-index {
+  padding-top: 75px;
+  text-align: center;
+  font-size: 37px;
+}
+
+.link-button {
+  color: #0D6FFB;
+  font-size: 117px;
+}
+
+/* 패작러, 버스기사 페이지 */
+
+.show{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.new{
+  padding-top: 100px;
+  text-align: center;
+}
+
+.link{
+  font-size: 30px;
+  padding-top: 80px;
+}
+
+.show>.content{
+  font-size: 60px;
+}
+
+.new>.content{
+  font-size: 60px;
+}
+
+.input{
+  text-align: center;
+}
+
+.champ_name{
+  font-size: 80px;
+}
+
+#notto{
+  color: #FC3E26;
+}
+
+#to{
+  color: #A2C81E;
+}

@@ -1,0 +1,15 @@
+<div class="container new">
+  <div class="content">
+    <p>
+      오늘 만나게될 버스기사를 알아봅니다.<br>
+      이름을 입력하세요!
+    </p>
+  </div>
+
+  <%= render 'form', post: @todo, class: "form" %>
+
+  <div class="row link">
+    <%= link_to '> 패작러 알아보기', new_nottodo_path, class: "col" %>
+    <%= link_to '> 돌아가기', root_path, class: "col" %>
+  </div>
+</div>

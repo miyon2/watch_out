@@ -1,0 +1,2 @@
+class Nottodo < ApplicationRecord
+end
